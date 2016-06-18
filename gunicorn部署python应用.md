@@ -83,7 +83,7 @@ nginx的配置不做介绍了，可参考：[nginx配置详解](http://)
 
 	server {
 	    listen 80;
-	    server_name example.org; # 这是HOST机器的外部域名，用地址也行
+	    server_name www.example.org; # 这是HOST机器的外部域名，用地址也行
 	
 		 # 动态请求转发到8000端口:
 	    location / {
@@ -100,7 +100,7 @@ nginx的配置不做介绍了，可参考：[nginx配置详解](http://)
 		listen 80 default_server;  # 监听80端口
 		listen [::]:80 default_server ipv6only=on;
 	
-		server_name example.org; # 这是HOST机器的外部域名，用地址也行
+		server_name www.example.org; # 这是HOST机器的外部域名，用地址也行
 		
 		access_log /var/log/nginx/app.access.log;
 		error_log /var/log/nginx/app.error.log;
